@@ -36,19 +36,44 @@
         .ico
         {
             font-size:120px;
-            padding-left:50px;
+            /*padding-left:50px;
             padding-right:50px;
-            padding-top:25px;
+            padding-top:25px;*/
 
         }
         .icoDesc
         {
             font-family: "Sriracha", serif;
             font-size:20px;
-            padding-left:50px;
-            padding-right:50px;
+            /*padding-left:50px;
+            padding-right:50px;*/
             padding-top:25px;
+            text-align: center;
 
+        }
+        .icoButton
+        {
+            font-family: "Sriracha", serif;
+            font-size:40px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            height: 50px;
+            width: 30%;
+            margin-left:35%;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px grey;
+        }
+        .ico1
+        {
+            background-color: #e67e22;
+            color:#fff;
+        }
+        .ico2
+        {
+            background-color: #3498db;
+            color:#fff;
         }
         .icoDescIco
         {
@@ -95,6 +120,15 @@
             top: 50%;
             right:5%;
         }
+        .fermo
+        {
+            position: fixed;
+            max-width: 35%;
+            max-height: 35%;
+            top: 85%;
+            right:5%;
+            font-family: "Sriracha", serif;
+        }
         .whatsapp
         {
             position: fixed;
@@ -102,6 +136,17 @@
             right:5%;
             font-size: 25px;
             color: #CC2E89;
+        }
+        .update
+        {
+            font-size: 64px;
+            color: #f1c40f;
+        }
+
+        .descButton
+        {
+            font-size: 11px;
+            color: #FFF;
         }
         /* Larghezza della scrollbar */
 ::-webkit-scrollbar {
@@ -124,6 +169,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #124F2C;
 }
+
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -143,6 +190,7 @@
 <body   class="corpo">
     <a href="https://wa.me/393398314318?text=Ciao%20Peppe!%20Verrò%20al%20tuo%20compleanno%20con...%20/Non%20verrò%20perchè%20sono..."><img  class="mioPng" src="img/me.png"/></a>
     <i class="fi fi-brands-whatsapp whatsapp"></i>
+    <span class="fermo descButton">Clicca su di me <br>per confermare<br> la presenza!</span>
     <div id="bodyCorpo">
         <div class="row">
             <div class="col-sm-4 mainText">Benvenuto</div>
@@ -157,36 +205,60 @@
 
 
         <div class="row icons">
+            <div class="col-sm-4 ico bg1"><i class= "fi fi-ss-restaurant"></i>
+            
+                <div class="icoDesc" >
+                Festeggerò da <br><b>Ristorante Pizzeria Piperita</b>
+                <br>
+                <p>
+                    <a target="_blank" href="https://www.instagram.com/piperitaristorantepizzeria/">
+                        <span class="icoButton ico1">
+                            <i class="fi fi-brands-instagram"></i>
+                        </span>
+                    </a>
+                    <span class="descButton">Clicca per visualizzare la pagina instagram</span>
+                </p>
+                
+                <br>Via Nazionale delle Puglie, 110, 80013 Casalnuovo di Napoli NA
+                <br>
+                <p>
+                    <a target="_blank" href="https://www.google.com/maps/dir//Via+Nazionale+delle+Puglie,+110,+80013+Casalnuovo+di+Napoli+NA/@40.9015953,14.2603436,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133ba93c87c8234d:0x426709a2a4795cfa!2m2!1d14.3427444!2d40.9016246?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">
+                        <span class="icoButton ico1">
+                            <i class="fi fi-rr-land-layer-location"></i>
+                        </span>
+                    </a>
+                    <span class="descButton">Clicca per visualizzare la mappa</span>
+                </p>
 
-        <div class="col-sm-4 ico bg1"><i class= "fi fi-ss-restaurant"></i>
-        <div class="icoDesc" >
-        Festeggerò da <br><b>Ristorante Pizzeria Piperita</b>
-        <br><u><a target="_blank" href="https://www.instagram.com/piperitaristorantepizzeria/"><i class="fi fi-brands-instagram icoDescIco"></i></a></u>
-        <br>Via Nazionale delle Puglie, 110, 80013 Casalnuovo di Napoli NA
-        <br>
-        <u><a target="_blank" href="https://www.google.com/maps/dir//Via+Nazionale+delle+Puglie,+110,+80013+Casalnuovo+di+Napoli+NA/@40.9015953,14.2603436,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x133ba93c87c8234d:0x426709a2a4795cfa!2m2!1d14.3427444!2d40.9016246?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">
-        <i class="fi fi-rr-land-layer-location icoDescIco"></i></a></u>
-        </div>
-        </div>
+                </div>
+            </div>
 
-        <div class="col-sm-4 ico bg2"><i class= "fi fi-ss-calendar-clock"></i>
-        <div class="icoDesc">
-        Venerdì 7 Marzo
-        <br><i class="fi fi-br-calendar icoDescIco"></i>
-        <br>Alle 20:00, arriva puntuale che aspettiamo <b>te</b><br>
-        per cominciare a mangiare 
-        <br>
-        <u><a target="_blank" href="https://www.contagiorni.it/contatori/id/676602"><i class="fi fi-rs-alarm-clock icoDescIco"></i></a></u>
-        </div>
-        </div>
+            <div class="col-sm-4 ico bg2"><i class= "fi fi-ss-calendar-clock"></i>
+                <div class="icoDesc">
+                Venerdì 7 Marzo
+                <br><i class="fi fi-br-calendar icoDescIco"></i>
+                <br>Alle 20:00, arriva puntuale che aspettiamo <b>te</b><br>
+                per cominciare a mangiare 
+                <br>
+                <br>
+                <p>
+                    <a target="_blank" href="https://www.contagiorni.it/contatori/id/676602">
+                        <span class="icoButton ico2">
+                            <i class="fi fi-rs-alarm-clock"></i>
+                        </span>
+                    </a>
+                    <span class="descButton">Clicca per Scoprire quanto manca!</span>
+                </p>
+                </div>
+            </div>
 
-        <div class="bg3 col-sm-4">
-        <div class=" ico"><a href="partecipanti.html"><i class= "fi fi-rr-leadership-alt"></i></a></div>
-        <div class="icoDesc">La lista ufficiale dei <br>partecipanti
-         sarà diramata <br>poco prima<br> 
-        dell' evento!
-        </div>
-        </div>
+            <div class="bg3 col-sm-4">
+            <div class=" ico"><a href="partecipanti.html"><i class= "fi fi-rr-leadership-alt"></i></a></div>
+            <div class="icoDesc">La lista ufficiale dei <br>partecipanti
+            sarà diramata <br>poco prima<br> 
+            dell' evento!
+            </div>
+            </div>
         </div>
     </div>
 
